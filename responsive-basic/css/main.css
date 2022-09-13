@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #131e3d;
+    background: linear-gradient(to right, rgb(51, 154, 245),#131e3d );
+    /* background-color: #023047; */
+}
+
+/***************** HEADER *****************/
+header {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    position: fixed;
+    z-index: 1;
+    /* border: 1px solid red; */
+    /* background-color: #e54f6d; */
+    /* background-color: #219ebc; */
+}
+
+.container-menu{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container-menu .menu{
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.container-menu .logo img{
+    width: 60px;
+} 
+
+#selected{
+    background: #3451a2;
+    padding: 10px 40px;
+    border-radius: 50px;
+
+}
+/***************** BODY *****************/
+.container-cover{
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid red; */
+}
+.container-cover .cover{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-cover .text{
+    max-width: 400px;
+}
+.container-cover .text h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: aliceblue;
+}
+.container-cover .text p{
+    font-size: 18px;
+    margin-top: 40px;
+    color: aliceblue;
+    text-align: justify;
+}
+.container-cover .text input{
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #3451a2,#131e3d );
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #131e3d;
+    transition: all 300ms;
+}
+.container-cover .text input:hover{
+    box-shadow: 1px 1px 30px -6px #131e3d;
+}
+.container-cover .cover .svg{
+    width: 600px;
+    animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector{
+    0%{
+        transform: translateY(15px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(15px);
+    }
+}
